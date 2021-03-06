@@ -1,0 +1,85 @@
+* {
+  font-family: 'Product Sans';
+  letter-spacing: @letter-spacing-default;
+  color: @color-brand-primary-darkest
+}
+each(@ls-line-heights, {
+  .ls-line-height-@{key} {
+    line-height: @value;
+  }
+});
+
+each(@ls-letter-spacings, {
+  .ls-letter-spacing-@{key} {
+    letter-spacing: @value;
+  }
+});
+
+each(@ls-font-weight, {
+  .ls-font-weight-@{key} {
+    font-weight: @value;
+  }
+});
+
+each(@ls-font-size, {
+  .ls-font-size-@{key} {
+    font-size: @value;
+  }
+});
+
+each(@ls-border-radius, {
+  .ls-border-radius-@{key} {
+    border-radius: @value;
+  }
+});
+
+each(@ls-border-width, {
+  .ls-border-width-@{key} {
+    border-width: @value;
+  }
+});
+
+each(@ls-opacity, {
+  .ls-opacity-@{key} {
+    opacity: @value;
+  }
+});
+
+each(@ls-shadow, {
+  .ls-shadow-@{key} {
+    box-shadow: @value;
+  }
+});
+
+each(@ls-spacing-stack, {
+  .ls-margin-top-@{key} {
+    margin-top: @value;
+  }
+  .ls-margin-bottom-@{key} {
+    margin-bottom: @value;
+  }
+  .ls-margin-left-@{key} {
+    margin-left: @value;
+  }
+  .ls-margin-right-@{key} {
+    margin-right: @value;
+  }
+});
+each(@ls-spacing-inset, {
+  .ls-spacing-@{key} {
+    padding: @value;
+  }
+});
+each(@ls-spacing-squish, {
+  .ls-spacing-@{key} {
+    padding: @value;
+  }
+});
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .25s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
